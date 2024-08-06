@@ -5,10 +5,13 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-  /* overflow-y: scroll; */
 }
 :root {
   --aside-bg-color: #040b14;
+  --section-bg-color: white;
+  --text-color: black;
+  --color: #0cf;
+
 }
 a {
   text-decoration: none;
@@ -16,14 +19,17 @@ a {
 ul li {
   list-style: none;
 }
-.potfolio {
-  width: 100%;
-}
+
 body{
     overflow-x: hidden;
+    
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 aside {
-  width: 320px;
+  width: 340px;
+  /* width: 24%; */
   height: 100%;
   position: fixed;
   top: 0;
@@ -33,12 +39,26 @@ aside {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  z-index: 100;
 }
 .logo {
   position: relative;
   color: white;
   padding: 15px;
   margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  background: -webkit-linear-gradient(#ffffff, #2232dd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.logo h1 {
+  font-size: 40px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-family: "Pacifico", cursive;
 }
 .logo h2 {
   font-size: 30px;
@@ -46,24 +66,23 @@ aside {
   font-weight: 600;
 }
 .logo span {
-  font-family: "Pacifico", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 50px;
+  font-size: 30px;
 }
 
-.logo::before {
+.logo h2::before {
   content: "";
   position: absolute;
   border-top: 5px solid white;
-  /* background: linear-gradient(115deg, #004ff9, #000000);; */
   border-left: 5px solid white;
   width: 80px;
   height: 40px;
   top: 0;
   left: 0;
+
 }
-.logo::after {
+.logo h2::after {
   content: "";
   position: absolute;
   border-bottom: 5px solid white;
@@ -92,6 +111,10 @@ aside {
   color: white;
   font-family: "Pacifico", cursive;
   letter-spacing: 3px;
+  height: 35px;
+  background: -webkit-linear-gradient(#ffffff, #2232dd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .left-icon {
@@ -120,16 +143,7 @@ aside {
   margin-bottom: 5px;
   transition: 0.5s ease;
 }
-.social-icon .tooltip::before {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  /* background-color: rgb(31, 30, 30); */
-  left: 50%;
-  transform: translateX(-50%) rotate(45deg);
-  bottom: -5px;
-}
+
 .icon i {
   background-color: white;
   padding: 10px;
@@ -207,55 +221,416 @@ aside {
   color: white;
 }
 .menu ul li:hover i {
-  color: orangered;
+  color: rgb(61, 61, 254);
 }
+
 
 /* ===== right-section start ===== */
 
+
 .right {
-  margin-left: 320px;
-  width: 80%;
-  height: 100%;
-  /* overflow: hidden; */
-  box-sizing: border-box;
-}
-/* section{
-    overflow: hidden;
-} */
-.live-wallpaper {
-    /* overflow: hidden; */
-  position: absolute;
-  width: 79%;
+  margin-left: 328px;
   height: 100vh;
-  background-color: #292f37;
+  position: relative;
+  z-index: 20;
+  background-color: #000;
+  
 }
-.section {
-  padding: 2rem 4rem;
+.background{
+  z-index: -1;
+}
+
+/* Gradient CSS */
+.blob {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+  height: 550px;
+  border-radius: 100%;
+  background-image: linear-gradient(#1100ff 10%, #ff00f2);
+  filter: blur(250px);
+  transition: all 450ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-50% + 15px), -50%);
+  z-index: -1;
+}
+
+/* Random CSS for Demo */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   width: 100%;
   height: 100vh;
+  color: white;
 }
-.header {
+.home-text{
+  position: absolute;
+  left: 4rem;
+}
+.home-text h1{
+  font-size: 100px;
+  font-weight: 400;
+  color: white;
+  font-family: "Pacifico", cursive;
+  /* margin-bottom: 40px; */
+  letter-spacing: 3px;
+  height: 148px;
+  background: -webkit-linear-gradient(#ffffff, #2232dd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.home-text p{
+  font-size: 30px;
+  font-family: "Pacifico", cursive;
+  letter-spacing: 5px;
+  height: 49px;
+  background: -webkit-linear-gradient(#ffffff, #2232dd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+button{
+  position: relative;
+  margin-top: 1rem;
+  padding: 8px 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-image: linear-gradient( 91.2deg,  rgba(136,80,226,1) 4%, rgba(16,13,91,1) 96.5% );
+  color: white;
+  font-family: "Pacifico", cursive;
+  transition: .5s ease;
+  font-size: 18px;
+  border-radius: 20px;
+  letter-spacing: 2px;
+}
+button:hover{
+    letter-spacing: 4px;
+}
+
+header{
   display: flex;
-  align-items: center;
-  padding: 0 3rem;
-  z-index: 10;
   justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 320px;
+  z-index: 12;
+  padding: 1rem 4rem;
 }
-.header-logo {
-  width: 70px;
-  height: 70px;
+
+.img-logo{
+  width: 80px;
+  height: 60px;
 }
-.header-logo img {
+.img-logo img{
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
-.day-night {
-  /* background-color: red; */
+
+.contact a {
   color: white;
-  z-index: 3;
+  font-size: 29px;
+  cursor: pointer;
+  z-index: 100;
 }
-/* .home{
-    background-color: #292F37;
-} */
+.contact{
+  display: flex;
+  align-items: center;
+}
+header .contact h5{
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  margin-right: 10px;
+  background-color: white;
+  padding: 5px 20px;
+  border-radius: 20px;
+  opacity: 0;
+  transition: .45s ease;
+  cursor: pointer;
+}
+
+.contact i{
+  color: blue;
+}
+
+.contact:hover h5{
+  opacity: 1;
+}
+/* ======= about-setion ============== */
+
+.about{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+  background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+  scale: 0;
+  opacity: 0;
+  transition: .45s linear;
+}
+.about-container{
+  width: 80%;
+  height: 600px;
+  top: 0;
+  right: 0;
+  left: 0px;
+  padding: 2rem  4rem;
+  position: relative;
+  border-radius: 10px;
+  background-color: #000;
+  box-shadow: 0 0 20px blue;
+}
+
+
+.bg-watermark {
+  color: #1f1f1f;
+  font-size: clamp(6rem, 1.3333rem + 14.9333vw, 20rem);
+  font-weight: 800;
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%) translatey(-15%);
+  user-select: none;
+  letter-spacing: 0.5rem;
+}
+
+span {
+  text-transform: uppercase;
+  display: block;
+  font-size: 7.5rem;
+  color: #161313;
+
+}
+.aboutme-content{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.about-left{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.about-text-content h4{
+    font-size: 52px;
+    background: -webkit-linear-gradient(#063ee6, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about-text-content p{
+  font-size: 20px;
+  font-family: "Pacifico", cursive;
+  letter-spacing: 3px;
+}
+.about-span{
+  color: white;
+  display: flex;
+  text-align: justify;
+  line-height: 1.5;
+  font-weight: 300;
+  font-size: 12px;
+
+}
+
+.tools{
+  width: 100%;
+  height: 100px;
+  margin-top: 1rem;
+  display: flex;
+  align-items: start;
+}
+.tools .highlight{
+  display: flex;
+  flex-wrap: wrap;
+}
+.highlight li{
+  border: 1px solid rgb(109, 108, 108);
+  border-radius: 20px;
+  padding: 3px 10px;
+  margin-block: 5px;
+  font-size: 13px;
+  margin-inline: 5px;
+  color: rgb(142, 135, 135);
+  transition: .45s ease;
+  cursor: grab;
+}
+.highlight li i{
+  font-size: 13px;
+  margin-right: 4px;
+}
+.highlight li:hover{
+  color: white;
+  border: 1px solid white;
+}
+.about-right{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about-right img{
+  margin-top: 4rem;
+  width: 100%;
+  height: 350px;
+}
+button a{
+  color: white;
+  font-family: "Pacifico", cursive;
+
+}
+.text-color{
+  color: blue;
+  font-size: 12px;
+}
+.about-btn{
+  margin-top: -40px;
+}
+
+.about-icons{
+  display: flex;
+  flex-direction: column;
+}
+.tool-heading h1{
+  font-size: 30px;
+  width: 100px;
+  border-bottom: 3px solid blue;
+    background: -webkit-linear-gradient(#063ee6, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.tool-showcase{
+  display: flex;
+  position: relative;
+}
+.tool-icon{
+  flex: 1;
+}
+.tools-logo-icon{
+  margin-inline: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tools-logo-icon i{
+  font-size: 30px;
+  color: skyblue;
+}
+.tool-tips{
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 20px;
+  opacity: 0;
+  scale: 0;
+  transition: .45s linear;
+  margin-bottom: 10px;
+}
+.tools-logo-icon i{
+  color: white;
+}
+.tools-logo-icon:hover .react-i{
+  color: skyblue;
+}
+.tools-logo-icon:hover .react{
+  color: skyblue;
+  opacity: 1;
+  scale: 1.1;
+}
+
+.tools-logo-icon:hover .js-i{
+  color: yellow;
+}
+.tools-logo-icon:hover .js{
+  color: yellow;
+  opacity: 1;
+  scale: 1.1;
+}
+
+.tools-logo-icon:hover .py-i{
+  color: violet;
+}
+.tools-logo-icon:hover .py{
+  color: violet;
+  opacity: 1;
+  scale: 1.1;
+}
+.tools-logo-icon:hover .git-i{
+  color: orangered;
+}
+.tools-logo-icon:hover .git{
+  color: orangered;
+  opacity: 1;
+  scale: 1.1;
+}
+
+.tools-logo-icon:hover .boots-i{
+  color: rgb(77, 16, 77);
+}
+.tools-logo-icon:hover .boots{
+  color: violet;
+  opacity: 1;
+  scale: 1.1;
+}
+
+.tools-logo-icon:hover .github-i{
+  color: gray;
+}
+.tools-logo-icon:hover .github{
+  color: gray;
+  opacity: 1;
+  scale: 1.1;
+}
+
+.tools-logo-icon:hover .css-i{
+  color: rgb(7, 46, 239);
+}
+.tools-logo-icon:hover .css{
+  color: rgb(12, 66, 243);
+  opacity: 1;
+  scale: 1.1;
+}
+
+.close-btn{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.close{
+  font-size: 35px;
+  cursor: pointer;
+  color: rgb(120, 114, 114);
+  transition: .45s;
+}
+.close:hover{
+  color: orangered;
+}
+.about-active{
+  opacity: 1;
+  scale: 1;
+}
+

@@ -17,3 +17,11 @@ closeBtn.addEventListener("click", ()=>{
   aboutSection.classList.remove("about-active")
 })
 // document.querySelector(".about-section-btn").onclick
+
+
+const menuBtn = document.querySelector(".fa-bars")
+const leftNav = document.querySelector(".left")
+menuBtn.addEventListener("click", ()=>{
+  menuBtn.classList.toggle("fa-xmark")
+  leftNav.classList.toggle("nav-active")
+})

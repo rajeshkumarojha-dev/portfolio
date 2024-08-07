@@ -46,7 +46,7 @@ aside {
   position: relative;
   color: white;
   padding: 15px;
-  margin: 2rem 0;
+  margin: 1rem 0;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -76,8 +76,8 @@ aside {
   position: absolute;
   border-top: 5px solid white;
   border-left: 5px solid white;
-  width: 80px;
-  height: 40px;
+  width: 60px;
+  height: 20px;
   top: 0;
   left: 0;
 
@@ -87,8 +87,8 @@ aside {
   position: absolute;
   border-bottom: 5px solid white;
   border-right: 5px solid white;
-  width: 80px;
-  height: 40px;
+  width: 60px;
+  height: 20px;
   bottom: 0;
   right: 0;
 }
@@ -199,7 +199,6 @@ aside {
 .menu ul li {
   margin-top: 20px;
   display: flex;
-  margin-left: -40px;
   width: 150px;
 }
 .memu ul {
@@ -227,15 +226,14 @@ aside {
 
 /* ===== right-section start ===== */
 
-
 .right {
   margin-left: 328px;
   height: 100vh;
   position: relative;
   z-index: 20;
   background-color: #000;
-  
 }
+
 .background{
   z-index: -1;
 }
@@ -278,22 +276,23 @@ aside {
   font-weight: 400;
   color: white;
   font-family: "Pacifico", cursive;
-  /* margin-bottom: 40px; */
   letter-spacing: 3px;
-  height: 148px;
+  height: 176px;
   background: -webkit-linear-gradient(#ffffff, #2232dd);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .home-text p{
   font-size: 30px;
   font-family: "Pacifico", cursive;
   letter-spacing: 5px;
-  height: 49px;
+  height: 59px;
   background: -webkit-linear-gradient(#ffffff, #2232dd);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 button{
   position: relative;
   margin-top: 1rem;
@@ -309,6 +308,7 @@ button{
   border-radius: 20px;
   letter-spacing: 2px;
 }
+
 button:hover{
     letter-spacing: 4px;
 }
@@ -329,6 +329,7 @@ header{
   width: 80px;
   height: 60px;
 }
+
 .img-logo img{
   width: 100%;
   height: 100%;
@@ -342,10 +343,12 @@ header{
   cursor: pointer;
   z-index: 100;
 }
+
 .contact{
   display: flex;
   align-items: center;
 }
+
 header .contact h5{
   font-size: 16px;
   font-weight: 500;
@@ -366,6 +369,10 @@ header .contact h5{
 .contact:hover h5{
   opacity: 1;
 }
+
+.menu-icon{
+  display: none;
+}
 /* ======= about-setion ============== */
 
 .about{
@@ -385,6 +392,7 @@ header .contact h5{
   opacity: 0;
   transition: .45s linear;
 }
+
 .about-container{
   width: 80%;
   height: 600px;
@@ -460,10 +468,12 @@ span {
   display: flex;
   align-items: start;
 }
+
 .tools .highlight{
   display: flex;
   flex-wrap: wrap;
 }
+
 .highlight li{
   border: 1px solid rgb(109, 108, 108);
   border-radius: 20px;
@@ -475,14 +485,17 @@ span {
   transition: .45s ease;
   cursor: grab;
 }
+
 .highlight li i{
   font-size: 13px;
   margin-right: 4px;
 }
+
 .highlight li:hover{
   color: white;
   border: 1px solid white;
 }
+
 .about-right{
   width: 50%;
   height: 100%;
@@ -491,20 +504,23 @@ span {
   align-items: center;
   flex-direction: column;
 }
+
 .about-right img{
   margin-top: 4rem;
   width: 100%;
   height: 350px;
 }
+
 button a{
   color: white;
   font-family: "Pacifico", cursive;
-
 }
+
 .text-color{
   color: blue;
   font-size: 12px;
 }
+
 .about-btn{
   margin-top: -40px;
 }
@@ -521,13 +537,16 @@ button a{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .tool-showcase{
   display: flex;
   position: relative;
 }
+
 .tool-icon{
   flex: 1;
 }
+
 .tools-logo-icon{
   margin-inline: 2px;
   display: flex;
@@ -539,6 +558,7 @@ button a{
   font-size: 30px;
   color: skyblue;
 }
+
 .tool-tips{
   position: relative;
   font-size: 14px;
@@ -550,12 +570,15 @@ button a{
   transition: .45s linear;
   margin-bottom: 10px;
 }
+
 .tools-logo-icon i{
   color: white;
 }
+
 .tools-logo-icon:hover .react-i{
   color: skyblue;
 }
+
 .tools-logo-icon:hover .react{
   color: skyblue;
   opacity: 1;
@@ -565,6 +588,7 @@ button a{
 .tools-logo-icon:hover .js-i{
   color: yellow;
 }
+
 .tools-logo-icon:hover .js{
   color: yellow;
   opacity: 1;
@@ -574,14 +598,17 @@ button a{
 .tools-logo-icon:hover .py-i{
   color: violet;
 }
+
 .tools-logo-icon:hover .py{
   color: violet;
   opacity: 1;
   scale: 1.1;
 }
+
 .tools-logo-icon:hover .git-i{
   color: orangered;
 }
+
 .tools-logo-icon:hover .git{
   color: orangered;
   opacity: 1;
@@ -591,6 +618,7 @@ button a{
 .tools-logo-icon:hover .boots-i{
   color: rgb(77, 16, 77);
 }
+
 .tools-logo-icon:hover .boots{
   color: violet;
   opacity: 1;
@@ -600,6 +628,7 @@ button a{
 .tools-logo-icon:hover .github-i{
   color: gray;
 }
+
 .tools-logo-icon:hover .github{
   color: gray;
   opacity: 1;
@@ -609,6 +638,7 @@ button a{
 .tools-logo-icon:hover .css-i{
   color: rgb(7, 46, 239);
 }
+
 .tools-logo-icon:hover .css{
   color: rgb(12, 66, 243);
   opacity: 1;
@@ -620,17 +650,160 @@ button a{
   top: 0;
   right: 0;
 }
+
 .close{
   font-size: 35px;
   cursor: pointer;
   color: rgb(120, 114, 114);
   transition: .45s;
 }
+
 .close:hover{
   color: orangered;
 }
+
 .about-active{
   opacity: 1;
   scale: 1;
 }
 
+@media(max-width:1500px){
+  body{
+    overflow: hidden;
+  }
+  .container {
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+.about-left{
+  z-index: 12;
+}
+}
+@media(max-width:1130px){
+  .about-left{
+    width: 100%;
+  }
+  .about-right{
+    display: none;
+  }
+}
+@media(max-width:1057px){
+  .left{
+    transform: translateX(-400px);
+    transition: .45s linear;
+  }
+  .nav-active{
+    transform: translateX(0);
+  }
+  .right{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+   margin: 0;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0px;
+    z-index: 12;
+    padding: 1rem 4rem;
+}
+.menu-icon{
+  display: block;
+  background-color: white;
+  padding: 10px 20px;
+  margin-left: 30px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-icon i{
+  font-size: 25px;
+  cursor: pointer;
+  color: blue;
+}
+
+}
+
+@media(max-width:730px){
+  .home-text h1 {
+    font-size: 68px;
+    letter-spacing: 3px;
+    height: 126px;
+}
+.home-text p {
+  font-size: 20px;
+  letter-spacing: 3px;
+  height: 48px;
+}
+button {
+  font-size: 15px;
+}
+}
+@media(max-width:640px){
+  .about-container{
+    width: 100%;
+  }
+}
+@media(max-width:531px){
+  .home-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    left: 1rem;
+}
+.about-text-content h4 {
+  text-align: center;
+}
+.about-text{
+  text-align: center;
+}
+.tool-heading h1 {
+  text-align: center;
+  width: 100%;
+}
+.tool-showcase {
+  flex-wrap: wrap;
+}
+.about{
+  overflow: hidden;
+}
+.about-container{
+  padding: 2rem 1rem;
+}
+
+}
+@media(max-width:478px){
+  .home-text h1 {
+    font-size: 68px;
+    letter-spacing: 3px;
+    height: 240px;
+}
+
+  .home-text p {
+      font-size: 20px;
+      letter-spacing: 3px;
+      height: 96px;
+  }
+  header{
+    padding: 1rem 0;
+  }
+  .about-container{
+    height: 100vh;
+  }
+  .tool-heading{
+    display: none;
+  }
+  .tool-showcase{
+    margin-top: 2rem;
+  }
+}

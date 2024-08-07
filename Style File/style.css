@@ -121,7 +121,12 @@ aside {
   display: flex;
   align-items: center;
 }
-
+.close-nav{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
 .social-icon {
   display: flex;
   flex-direction: column;
@@ -805,5 +810,17 @@ button {
   }
   .tool-showcase{
     margin-top: 2rem;
+  }
+}
+@media(max-width:370px){
+  .close-nav{
+    display: block;
+    font-size: 40px;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+  }
+  .close-nav:hover{
+    color: orangered;
   }
 }

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script
       src="https://kit.fontawesome.com/e944101661.js"
@@ -22,7 +23,7 @@
         <a href="/portfolio/Index File/index.html">Home</a>
         <a href="/portfolio/Index File/index-resume.html">Resume</a>
         <a href="/portfolio/Index File/index-project.html">Project</a>
-        <a href="">Contact</a>
+        <a href="/portfolio/Index File/index-contact.html">Contact</a>
       </nav>
     </header>
     <section class="resume">
@@ -31,11 +32,11 @@
           <span>Portfolio</span>
         </div>
       </div>
-      <div class="project-heading">
+      <div class="project-heading" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1500">
         <h1>Done Projects</h1>
       </div>
       <div class="resume-container">
-        <div class="vertical-text">
+        <div class="vertical-text" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1500">
           <p>
             Projects
             <i class="fa-solid fa-window-minimize fa-flip-vertical fa-2xs"></i
@@ -48,7 +49,7 @@
           
           <div class="project-profile" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
 
-            <div class="project-profile-container" >
+            <div class="project-profile-container" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="2500">
                 <div class="project-profile-content">
                     <img src="/portfolio/images/projectImg/project1.png" alt="" />
                 </div>
@@ -61,7 +62,7 @@
                 </div>
             </div>
 
-            <div class="project-profile-container">
+            <div class="project-profile-container" data-aos="fade-up" data-aos-delay="2000" data-aos-duration="2500">
                 <div class="project-profile-content">
                     <img src="/portfolio/images/projectImg/project2.png" alt="" />
                 </div>
@@ -74,7 +75,7 @@
                 </div>
             </div>
 
-            <div class="project-profile-container">
+            <div class="project-profile-container" data-aos="fade-up" data-aos-delay="2500" data-aos-duration="2500">
                 <div class="project-profile-content">
                     <img src="/portfolio/images/projectImg/project4.png" alt="" />
                 </div>
@@ -87,7 +88,7 @@
                 </div>
             </div>
 
-            <div class="project-profile-container">
+            <div class="project-profile-container" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500">
                 <div class="project-profile-content">
                     <img src="/portfolio/images/projectImg/project3.png" alt="" />
                 </div>
@@ -100,7 +101,7 @@
                 </div>
             </div>
 
-            <div class="project-profile-container">
+            <div class="project-profile-container" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1500">
                 <div class="project-profile-content">
                     <img src="/portfolio/images/projectImg/project5.png" alt="" />
                 </div>
@@ -113,7 +114,7 @@
                 </div>
             </div>
 
-            <div class="project-profile-container">
+            <div class="project-profile-container" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="1500">
                 <div class="project-profile-content">
                     <img src="/portfolio/images/projectImg/project6.png" alt="" />
                 </div>
@@ -126,7 +127,7 @@
                 </div>
             </div>
 
-            <div class="project-profile-container">
+            <div class="project-profile-container" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="2500">
                 <div class="project-profile-content">
                     <img src="/portfolio/images/projectImg/project7.png" alt="" />
                 </div>
@@ -139,7 +140,7 @@
                 </div>
             </div>
 
-            <div class="project-profile-container">
+            <div class="project-profile-container" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="3000">
                 <div class="project-profile-content">
                     <img src="/portfolio/images/projectImg/project8.png" alt="" />
                 </div>
@@ -172,6 +173,10 @@
         }
       });
     </script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
     <script src="/portfolio/script File/resume.js"></script>
   </body>
 </html>

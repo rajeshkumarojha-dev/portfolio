@@ -103,6 +103,8 @@ section {
   overflow: hidden;
 }
 .bg-watermark {
+  width: 100%;
+  text-align: center;
   font-size: clamp(6rem, 1.3333rem + 14.9333vw, 20rem);
   font-weight: 800;
   position: absolute;
@@ -116,6 +118,7 @@ section {
 }
 
 span {
+  /* width: 100%; */
   text-transform: uppercase;
   display: block;
   font-size: 7.5rem;

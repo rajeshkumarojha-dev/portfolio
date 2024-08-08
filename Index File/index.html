@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script
       src="https://kit.fontawesome.com/e944101661.js"
@@ -15,7 +16,7 @@
   <body>
     <section class="portfolio">
       <aside class="left">
-        <div class="logo">
+        <div class="logo" data-aos="fade-in" data-aos-delay="500" data-aos-duration="2000">
           <div class="firstletter"><h1>P</h1></div>
           <div class="secondletter"><h2>ortfolio</h2></div>
         </div>
@@ -25,33 +26,32 @@
         <div class="left-img">
           <img
             src="/portfolio/images/Rajesh_profile-removebg-preview-modified.png"
-            alt=""
-          />
-          <h6>Rajesh Kumar ojha</h6>
+            alt="" data-aos="fade-in" data-aos-delay="1000" data-aos-duration="3000"/>
+          <h6 data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000">Rajesh Kumar ojha</h6>
         </div>
         <div class="left-icon">
-          <div class="icon">
+          <div class="icon" data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000">
             <div class="social-icon">
               <h3 class="git tooltip">Github</h3>
               <a href="https://github.com/rajeshkumar2016R"><i class="fa-brands fa-github git"></i></a>
             </div>
           </div>
 
-          <div class="icon">
+          <div class="icon" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="2000">
             <div class="social-icon">
               <h3 class="link tooltip">Linkedin</h3>
               <a href="https://www.linkedin.com/in/rajesh-kumar-ojha/"><i class="fa-brands fa-linkedin link"></i></a>
             </div>
           </div>
 
-          <div class="icon">
+          <div class="icon" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="2000">
             <div class="social-icon">
               <h3 class="email tooltip">Email</h3>
               <a href="mailto:rajeshkumarojha.dev@gmail.com"><i class="fa-solid fa-envelope email"></i></a>
             </div>
           </div>
 
-          <div class="icon">
+          <div class="icon" data-aos="fade-up" data-aos-delay="2000" data-aos-duration="2000">
             <div class="social-icon">
               <h3 class="whats tooltip">Whatapp</h3>
               <a href="https://wa.me/7682014028"><i class="fa-brands fa-whatsapp whats"></i></a>
@@ -59,14 +59,14 @@
           </div>
 
           <div class="icon">
-            <div class="social-icon">
+            <div class="social-icon" data-aos="fade-up" data-aos-delay="2500" data-aos-duration="2000">
               <h3 class="face tooltip">Facebook</h3>
               <a href="https://www.facebook.com/rajeshkumar.ojha.7549/"><i class="fa-brands fa-facebook face"></i></a>
             </div>
           </div>
         </div>
         <div class="menu">
-          <ul>
+          <ul data-aos="fade-right" data-aos-delay="3000" data-aos-duration="2000">
             <li>
               <a href="/portfolio/Index File/index.html"><i class="fa-solid fa-house-chimney"></i>Home</a>
             </li>
@@ -88,7 +88,7 @@
       <div class="background">
         <div class="blob"></div>
         <div class="container">
-          <div class="home-bg-logo">
+          <div class="home-bg-logo" data-aos="fade" data-aos-delay="3000" data-aos-duration="1500">
             <img
               src="/portfolio/images/rk-blue-logo.png"
               alt=""
@@ -97,20 +97,20 @@
             />
           </div>
           <div class="home-text">
-            <h1>Rajesh Kumar</h1>
-            <p>Python Full-Stack Developer</p>
-            <button class="about-section-btn">
+            <h1 data-aos="fade-up" data-aos-delay="1000" data-aos-duration="2000">Rajesh Kumar</h1>
+            <p data-aos="fade-up" data-aos-delay="2000" data-aos-duration="2500">Python Full-Stack Developer</p>
+            <button class="about-section-btn" data-aos="fade-up" data-aos-delay="3000" data-aos-duration="3000">
               About Me <i class="fa-solid fa-arrow-right"></i>
             </button>
           </div>
         </div>
         <header>
-          <div class="img-logo">
+          <div class="img-logo" data-aos="fade-right" data-aos-delay="2500" data-aos-duration="1500">
             <img src="/portfolio/images/rk-blue-logo.png" alt="" />
           </div>
-          <div class="contact">
+          <div class="contact" data-aos="fade-left" data-aos-delay="1500" data-aos-duration="1500">
             <h5 class="tooltip">Contact</h5>
-            <a href=""><i class="fa-regular fa-paper-plane"></i></a>
+            <a href="/portfolio/Index File/index-contact.html"><i class="fa-regular fa-paper-plane"></i></a>
             <!-- <h5 class="tooltip"></h5> -->
             <div class="menu-icon">
               <i class="fa-solid fa-bars"></i>
@@ -232,6 +232,11 @@
         </div>
       </div>
     </about-section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <script src="/portfolio/script File/script.js"></script>
 
